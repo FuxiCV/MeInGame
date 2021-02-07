@@ -1,0 +1,8 @@
+.vscode
+__pycache__
+data/dataset
+data/models
+checkpoints
+samples
+results
+log*
