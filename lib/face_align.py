@@ -15,6 +15,8 @@ try:
 except BaseException:
   import urllib as request_file
 
+def appdata_dir(name: str):
+  return os.path.abspath('.')
 
 class LandmarksType(Enum):
   """Enum class defining the type of landmarks to detect.
