@@ -24,7 +24,7 @@ J. Lin, Y. Yuan, and Z. Zou, [MeInGame: Create a Game Character Face from a Sing
 
 ```bash
 pip install torch==1.4.0+cu100 torchvision==0.5.0+cu100 -f https://download.pytorch.org/whl/torch_stable.html
-pip install opencv-python fvcore h5py scipy scikit-image dlib face-alignment scikit-learn tensorflow-gpu==1.14.0 gast==0.2.2
+pip install opencv-python fvcore h5py scipy scikit-image dlib face-alignment==1.1.0 scikit-learn tensorflow-gpu==1.14.0 gast==0.2.2
 pip install "git+https://github.com/Agent-INF/pytorch3d.git@3dface"
 ```
 
