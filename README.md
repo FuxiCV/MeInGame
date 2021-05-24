@@ -11,6 +11,9 @@ J. Lin, Y. Yuan, and Z. Zou, [MeInGame: Create a Game Character Face from a Sing
 ### 3D display of the created game characters ([click to view](https://youtu.be/597cvKOegfE)): ###
 [![Watch the video](data/examples/demo.png)](https://youtu.be/597cvKOegfE)
 
+**\[Updates\]**
+- `2021.05.11`: The RGB 3D Face Dataset ([Google Drive](https://drive.google.com/file/d/1tSBHEQ06XjY1yFMe9EIkFz-euU1EurXv/view?usp=sharing), a password protected zip file) is now available! Please download and read the [LICENSE AGREEMENT](License_Agreement.pdf) carefully, and send the signed license agreement to yuanyi@corp.netease.com via email to get the **PASSWORD** for the zip file.
+
 ## Getting Started
 ### Requirements ###
 
@@ -37,10 +40,12 @@ git clone https://github.com/FuxiCV/MeInGame
 cd MeInGame
 ```
 
-2. Prepare the Basel Face Model following thet instructions on [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction#testing-with-pre-trained-network), and rename those files as follows:
+2. Prepare the Basel Face Model following the instructions on [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction#testing-with-pre-trained-network), and rename those files as follows:
+```
 Deep3DFaceReconstruction/BFM/BFM_model_front.mat -> ./data/models/bfm2009_face.mat
 Deep3DFaceReconstruction/BFM/similarity_Lm3D_all.mat -> ./data/models/similarity_Lm3D_all.mat
 Deep3DFaceReconstruction/network/FaceReconModel.pb -> ./data/models/FaceReconModel.pb
+```
 
 3. Download the pre-trained [model](https://drive.google.com/drive/folders/10YG_18w5nCS889WsfBB4AZxBNHnTP4Xn?usp=sharing), put the .pth file into ./checkpoints/celeba_hq_demo subfolder, and the .pkl file into ./data/models subfolder.
 
@@ -67,7 +72,8 @@ python create_dataset.py
 # You can modify the input_dir to your input images directory.
 ```
 
-2. Download our [RGB 3D face dataset]() (TBA), unzip it, and place it into the ./data/dataset/celeba_hq_gt subfolder.
+2. Download our RGB 3D Face Dataset ([Google Drive](https://drive.google.com/file/d/1tSBHEQ06XjY1yFMe9EIkFz-euU1EurXv/view?usp=sharing)), unzip it, and place it into the ./data/dataset/celeba_hq_gt subfolder.
+Please download and read the [LICENSE AGREEMENT](License_Agreement.pdf) carefully, and send the signed license agreement to yuanyi@corp.netease.com via email to get the **PASSWORD** for the zip file.
 
 ### Training networks ###
 After the dataset is ready, you can train the network with the following command:
