@@ -73,7 +73,7 @@ python create_dataset.py
 ```
 
 2. Download our RGB 3D Face Dataset ([Google Drive](https://drive.google.com/file/d/1tSBHEQ06XjY1yFMe9EIkFz-euU1EurXv/view?usp=sharing)), unzip it, and place it into the ./data/dataset/celeba_hq_gt subfolder.
-Please download and read the [LICENSE AGREEMENT](License_Agreement.pdf) carefully, and send the signed license agreement to yuanyi@corp.netease.com via email to get the **PASSWORD** for the zip file.
+Please download and read the [LICENSE AGREEMENT](License_Agreement.pdf) carefully, and send the signed license agreement to yuanyi@corp.netease.com via email to get the **PASSWORD** for the zip file. **Note: the permission for application is only open to researchers or faculty of universities or research institutes. It is prohibited for students or business entities to apply.**
 
 ### Training networks ###
 After the dataset is ready, you can train the network with the following command:
